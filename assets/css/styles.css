@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px; /* Cambiado a 600px */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 40%;
+    background: orange;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    flex: 1;
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+/* Ajustando el botón a tamaño de contenido */
+.modal-content button {
+    width: 15%;
+    flex: 1;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+.reserva_boton button {
+    width: 40%;
+    background: orange;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    flex: 1;
+    margin: 5px;
+    padding: 5px 5px;
+    
+}
+
+/* Ajustando el botón a tamaño de contenido */
+.reserva_boton button {
+    width: 15%;
+    flex: 1;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+.reserva_boton button:hover {
+    background-color: red;
+}
+
+/* Estilo para centrar el formulario emergente */
+.modal-content {
+    display: block;
+    background: red;
+    color: white;
+    text-align: center;
+    width: 800px;
+    padding: 20px;
+    position: fixed; /* Fijo para que esté sobre la página */
+    top: 50%; /* Mueve al centro vertical */
+    left: 50%; /* Mueve al centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el desplazamiento para centrar completamente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.modal-content input {
+    width: 400px;
+}
+
+.button-container {
+    display: flex; /* Flex para botones alineados horizontalmente */
+    justify-content: space-between; /* Espacio entre botones */
+    margin-top: 15px;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: calc(100% - 40px);
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.car-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.car-description {
+    font-size: 12px; /* Tamaño de la fuente */
+     /* Alineación a la izquierda */
+    list-style-type: disc; /* Viñetas */
+    padding-left: 20px; /* Espaciado de las viñetas */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.car-details {
+    background-color:#ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: left;
+    list-style-type: none; /* Para utilizar viñetas */
+    
+    font-size: 12px; /* Tamaño de texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.car-details div {
+    text-align: center;
+}
+.car-details li {
+    margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #218838;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.results-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.results-title h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .car-card {
+        width: 100%;
+    }
+}
